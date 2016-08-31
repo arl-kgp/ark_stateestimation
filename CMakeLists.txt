@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(ark_self_estimation)
+project(ark_stateestimation)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -179,3 +179,5 @@ include_directories(
 add_executable(node_detect src/node_detect.cpp)
 target_link_libraries(node_detect ${catkin_LIBRARIES})
 
+add_executable(sensor_fusion_node src/sensor_fusion_node.cpp)
+target_link_libraries(sensor_fusion_node ${catkin_LIBRARIES})

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>ark_self_estimation</name>
+  <name>ark_stateestimation</name>
   <version>0.0.0</version>
   <description>The ark_self_estimation package</description>
 
