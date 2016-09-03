@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   sensor_msgs
   std_msgs
+  dynamic_reconfigure
 )
 
 
@@ -69,6 +70,11 @@ find_package(catkin REQUIRED COMPONENTS
 #   Action1.action
 #   Action2.action
 # )
+
+## Generate dynamic reconfigure parameters in the 'cfg' folder
+generate_dynamic_reconfigure_options(
+  cfg/Variables.cfg
+)
 
 ## Generate added messages and services with any dependencies listed here
 #generate_messages(
